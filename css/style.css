@@ -130,13 +130,13 @@ h3 {
 }
 h2 {
     text-align:center;
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-/*h3 {
-   color: #e2574c;
-   font-size: 1.2rem;
-   margin-bottom: 1rem;
-}*/
+
 .emphasis {
     font-weight: bold;
     font-style: normal;
@@ -204,6 +204,7 @@ h2 {
  .new-collection {
      font-size: 1.25rem;
      align-self:center;
+     text-transform: uppercase;
  }
  .season {
      font-size: 3rem;
@@ -330,9 +331,13 @@ h2 {
 .carousel-sel p,h3 {
     text-align:center;
 }
-.carousel h3
+.carousel h3{
+    color: #E2574C;
+}
 
-
+.product-info {
+    width: 100%;
+}
 .product-info p, h3 {
     text-align: center;
 }
@@ -360,8 +365,13 @@ h2 {
         width: 50%;
         height: 500px;
         max-width:50%;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
+    .carousel-cell img{
+        margin: 0 auto;
+    }
+    
 
    .carousel-cell-image {
         display: block;
@@ -369,6 +379,18 @@ h2 {
         margin: 0 auto;
         max-width: 50%;
    } 
+ }
+
+ @media screen and (min-width: 1240px){
+    .large {
+        width: 50%;
+        max-width:50%;
+}
+    .small {
+        width: 25%;
+        max-width:25%;
+}
+
  }
 
 
