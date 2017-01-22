@@ -131,9 +131,23 @@ h3 {
 h2 {
     text-align:center;
 }
+
+/*h3 {
+   color: #e2574c;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+}*/
 .emphasis {
     font-weight: bold;
     font-style: normal;
+}
+.container {
+   margin: 0 auto;
+   width: 100%;
+}
+
+* { 
+    box-sizing: border-box; 
 }
 /****** Header Section ********/
 .page-header {
@@ -163,7 +177,7 @@ h2 {
      margin: 0 1rem;
  }
   .nav ul {
-      display: flex;
+    display: flex;
      list-style: none;
      justify-content: center;
  }
@@ -198,7 +212,10 @@ h2 {
      padding-right: 1rem;
      align-self: center;
  }
+
+
  /****** Product Category Section  *****/
+
 .products-type {
    display: flex;
    flex-wrap: wrap;
@@ -209,15 +226,26 @@ h2 {
 .small {
    border: 4px solid white;
    position: relative;
+   height:10rem;
 }
 
-/*.large img:before,
+.large img:before,
 .small img:before {
    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% );
-}*/
+}
+.category-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .category-name a {
    color: white;
    text-decoration: none;
+   text-align: center;
+   align-items: center; 
+   font-weight: bold;
+   font-size: 2.5rem;
+   top: 50%;
 }
 .category-name a:hover {
    color: #f5ebc6;
@@ -225,7 +253,12 @@ h2 {
 .large {
     width: 100%;
     max-width:100%;
-    height:10rem;
+    
+}
+.small {
+    width: 50%;
+    max-width:100%;
+      
 }
 .large.mens {
    background:
@@ -269,18 +302,73 @@ h2 {
    background-size: cover, cover;
 }
 
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 350px;
+  margin-right: 10px;
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+ max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+.carousel-sel p,h3 {
+    text-align:center;
+}
+.carousel h3
+
+
+.product-info p, h3 {
+    text-align: center;
+}
+
+ 
  @media screen  and ( min-width: 600px){
+ html {
+     font-size: 16px;
+ }    
 /****** Header Section ********/
     .logo {
         order: 1;
     }
+
      .nav {
          width: 60%;
          order: 2;
      }
+
      .cart {
          order: 3;
      }
+
+    .carousel-cell {
+        width: 50%;
+        height: 500px;
+        max-width:50%;
+        margin-right: 10px;
+    }
+
+   .carousel-cell-image {
+        display: block;
+        max-height: 70%;
+        margin: 0 auto;
+        max-width: 50%;
+   } 
  }
 
 

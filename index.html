@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Aloha Shop</title>
+    <title>Khoa Aloha Shop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/flickity.min.css">
@@ -22,8 +22,8 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#products">About</a></li>
+                <li><a href="#most-loved">Shop</a></li>
                 <li><a href="#">Featured</a></li>
                 <li><a href="#">Updates</a></li>
             </ul>
@@ -31,7 +31,7 @@
     </header>
     <section class="adv">
         <div class="ad-text ">
-            <p class="new-collection">NEW COLLECTION</p>
+            <p class="new-collection">new collection</p>
             <p class="season">Spring/Summer 2016</p>
         </div>
     </section>
@@ -57,10 +57,90 @@
             </div>
         </div>
     </section>
+
+    <section class="most-loved">
+        <div class="containe">
+
+            <div class="carousel" data-flickity='{ "lazyLoad": true, "prevNextButtons": false , "contain": true}'>
+                <!--<div class="carousel-cell">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg" alt="tulip"
+                    />
+                </div>-->
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
+                        <p>Dresses</p>
+                        <h3>Stretch Knit Dress</h3>
+                        <p class=>$169.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt">
+                        <p>Shirts</p>
+                        <h3>Cotton Blue Shirt</h3>
+                        <p>$89.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress">
+                        <p class="product-type">Dresses</p>
+                        <h3>Checked Stretch Dress</h3>
+                        <p class="price">$129.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack">
+                        <p class="product-type">Bags</p>
+                        <h3>Blue Hipster Backpack</h3>
+                        <p class="price">$69.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/demin-overall-shorts.jpg" alt="Image of demin overall shorts">
+                        <p class="product-type">Demin</p>
+                        <h3>Demin Overall Shorts</h3>
+                        <p class="price">$89.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/pink-dotted-dress.jpg" alt="Image of pink dotted dress">
+                        <p class="product-type">Dresses</p>
+                        <h3>Pink Dotted Dress</h3>
+                        <p class="price">$99.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/blue-silk-dress.jpg" alt="Image of blue silk dress">
+                        <p class="product-type">Dresses</p>
+                        <h3>Blue Silk Dress</h3>
+                        <p class="price">$119.00</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="product-info">
+                        <img src="images/cotton-yellow-tshirt.jpg" alt="Image of cotton yellow tshirt">
+                        <p class="product-type">Shirts</p>
+                        <h3>Cotton Yellow Tshirt</h3>
+                        <p class="price">$39.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <!-------------JavaScript link---------->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="js/lib/flickity.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 </body>
 
 </html>
