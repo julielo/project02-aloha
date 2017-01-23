@@ -136,7 +136,12 @@ h2 {
     margin-top: 1.5rem;
      
 }
-
+a {
+    color: white;
+}
+a:hover {
+    color: red;
+}
 
 .emphasis {
     font-weight: bold;
@@ -213,6 +218,13 @@ h2 {
      margin: 0 auto;
      padding-right: 1rem;
      align-self: center;
+ }
+
+ /***Hand Crafted***/ 
+ .handcrafted p{
+     text-align: center;
+     width: 80%;
+     margin: 0 auto;
  }
 
 
@@ -350,11 +362,19 @@ h2 {
       url('../images/wave-bkgd.jpg') no-repeat center bottom;
    color: white;
    margin-bottom: 8px;
-   margin-top: 1rem;
+   margin-top: 3rem;
    padding-bottom: 2rem;
+   padding-top: 1rem;
+   height: 340px;
+}
+.updates p {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
 }
 .updates-form{
-    margin: 0 15%;
+    margin: 0 auto;
+    top: 2rem;
     border: 2px solid white;
     border-radius: 25px;
     position: relative;
@@ -364,6 +384,7 @@ h2 {
     align-items: center;
     background-color: white;
     height: 3rem;
+    width: 52%;
      
 }
 input[type="email"],
@@ -412,7 +433,7 @@ footer {
 .social-media li {
     display: inline-block;
 }
-.address {
+address {
     color: #6F6F6F;
 }
 
@@ -433,6 +454,7 @@ footer {
      .cart {
          order: 3;
      }
+     
 
     .carousel-cell {
         width: 50%;
@@ -451,17 +473,38 @@ footer {
         margin: 0 auto;
         max-width: 50%;
    } 
+
+.updates p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
    footer {
     display:flex;
     align-items:baseline;
     justify-content: space-between;
     }
+    .copyRight
+    ,phoneEmail,
+    address {
+        text-align: left;
+        vertical-align: baseline;
+    }
     .social-media li {
-        display: block;
+        display: flex;
+        flex-direction:row;
+        align-items:baseline;;
     }
     .social-text{
         display:inline-block;
     }
+    .fa {
+        width: 2rem;
+        display: inline-block;
+        text-align:left;
+    }
+ 
  }
 
  @media screen and (min-width: 1240px){
