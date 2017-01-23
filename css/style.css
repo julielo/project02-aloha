@@ -517,13 +517,26 @@ address {
 .count {
     font-size: 0.9rem;
     font-weight: bold;
-    height: 2rem;
-    width: 2rem;  
+    height: 1rem;
+    width: 1rem;  
     border-radius: 50%;
     text-align:center;
     color: red;
     right: 0.2rem;
     top: 0.2rem;
+    position:fixed;
+     
+}
+.carousel-cell {
+  width: 25%;
+  height: 550px;
+  margin-right: 10px;
+}
+
+button {
+    margin: 0 auto;
+    color: white;
+    background-color: black;
 }
     .large {
         width: 50%;
