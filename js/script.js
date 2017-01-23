@@ -15,18 +15,16 @@
         var email = $('#email').val();
         if (email != ''){
           var valid = isValidEmailAddress(email);
-          
           if (valid) {
-            var message = 'Your email is ' + email + ' Thanks for subscribing';
-            var title = "Aloha Shop Message"
-            //alert('Your email is ' + email + ' Thanks for subscribing');
-            alert(title, message);
+            alert('thanks for subscribing');
           }
-           
+          else {
+            alert('not a valid email');
+          }
         }
-        else{
-          alert('You forgot to enter an email');
-        }
+        else {
+          alert('no email was provided');
+        }  
 
       //console.log($('#email').val()  );
   });

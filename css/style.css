@@ -351,35 +351,44 @@ h2 {
    color: white;
    margin-bottom: 8px;
    margin-top: 1rem;
+   padding-bottom: 2rem;
 }
 .updates-form{
     margin: 0 15%;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 25px;
     position: relative;
     display:flex;
     line-height: 1;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    height: 3rem;
+     
 }
 input[type="email"],
 input[type="button"] {
    border: 0;
    border-radius: 25px;
+   outline: none;
+   height: 1rem;
 }
 
-input[type["email"]]{
-    
+input[type="email"]{
+    width : 70%;
+    border-radius: 25px;
+    padding-left: 10px;
+    height: 1rem;
 }
+
 input[type="button"] {
    background-color: #e2574c;
    color: white;
    cursor: pointer;
    font-weight: bold;
-   padding: .25rem 1.5rem;
-   top: 3px;
-   right: 3px; 
+   top: 1px;
+   right: 1px; 
+   bottom: 2.5px;
    position: absolute;
    height:100%;
 }
@@ -387,6 +396,24 @@ input[type="button"] {
 input[type="submit"]:hover,
 input[type="submit"]:focus {
    background-color: #b64036;
+}
+
+/***Footer Section ***/
+footer {
+    display:block;
+    text-align: center;
+    background-color:#242424;
+    color: white;
+}
+
+.social-text {
+    display:none;
+}
+.social-media li {
+    display: inline-block;
+}
+.address {
+    color: #6F6F6F;
 }
 
  @media screen  and ( min-width: 600px){
@@ -417,7 +444,6 @@ input[type="submit"]:focus {
     .carousel-cell img{
         margin: 0 auto;
     }
-    
 
    .carousel-cell-image {
         display: block;
@@ -425,6 +451,17 @@ input[type="submit"]:focus {
         margin: 0 auto;
         max-width: 50%;
    } 
+   footer {
+    display:flex;
+    align-items:baseline;
+    justify-content: space-between;
+    }
+    .social-media li {
+        display: block;
+    }
+    .social-text{
+        display:inline-block;
+    }
  }
 
  @media screen and (min-width: 1240px){
