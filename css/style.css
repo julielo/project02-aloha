@@ -514,20 +514,33 @@ address {
  }
 
  @media screen and (min-width: 1240px){
+.count {
+    font-size: 0.9rem;
+    font-weight: bold;
+    height: 2rem;
+    width: 2rem;  
+    border-radius: 50%;
+    text-align:center;
+    color: red;
+    right: 0.2rem;
+    top: 0.2rem;
+}
     .large {
         width: 50%;
         max-width:50%;
-}
+    }
     .small {
         width: 25%;
         max-width:25%;
-}
-.purchase {
-    display: block;
-    border-radius: 25px;
-    border: none;
-
-}
+    }
+    .purchase {
+        display: block;
+        border-radius: 25px;
+        border: none;
+    }
+    .logo {
+        z-index: -1;
+    }
 
  }
 
