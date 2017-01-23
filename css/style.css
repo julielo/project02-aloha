@@ -335,6 +335,9 @@ a:hover {
   -webkit-transition: opacity 0.4s;
           transition: opacity 0.4s;
 }
+.purchase {
+    display: none;
+}
 
 /* fade in lazy loaded image */
 .carousel-cell-image.flickity-lazyloaded,
@@ -473,6 +476,9 @@ address {
         margin: 0 auto;
         max-width: 50%;
    } 
+   .flickity-viewport {
+       text-align:center;
+   }
 
 .updates p {
     text-align: center;
@@ -515,6 +521,12 @@ address {
     .small {
         width: 25%;
         max-width:25%;
+}
+.purchase {
+    display: block;
+    border-radius: 25px;
+    border: none;
+
 }
 
  }
